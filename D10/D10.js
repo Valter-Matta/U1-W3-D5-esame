@@ -456,6 +456,9 @@ const Tree = (num) => {
     console.log(' '.repeat(num - i) + '*'.repeat(2 * i - 1))
   }
 }
+//  --*
+//-***
+//*+****      è stata dura ma ok
 console.log(Tree(3))
 
 /* ESERCIZIO 29
