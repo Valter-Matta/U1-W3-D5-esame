@@ -438,7 +438,7 @@ const halfTree = (num) => {
     console.log('*'.repeat(i))
   }
 }
-halfTree(3)
+console.log(halfTree(3))
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
@@ -453,14 +453,23 @@ halfTree(3)
 */
 const Tree = (num) => {
   for (let i = 1; i <= num; i++) {
-    console.log('*'.repeat(i) + '*'.repeat(i))
+    console.log(' '.repeat(num - i) + '*'.repeat(2 * i - 1))
   }
 }
-halfTree(3)
+console.log(Tree(3))
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+const isItPrime = (num) => {
+  if (num < 2) {
+    return false
+  }
+  if (num % 2 === 0) {
+    return true
+  }
+}
+console.log(isItPrime(2))
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
