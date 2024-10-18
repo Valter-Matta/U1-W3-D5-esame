@@ -458,21 +458,21 @@ const Tree = (num) => {
 }
 //  --*
 //-***
-//*+****      è stata dura ma ok
+//*+****      /-= spazio) è stata dura ma ok
 console.log(Tree(3))
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 const isItPrime = (num) => {
-  if (num < 2) {
+  if (num <= 2) {
     return false
   }
   if (num % 2 === 0) {
     return true
   }
 }
-console.log(isItPrime(2))
+console.log(isItPrime(1))
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
